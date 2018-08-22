@@ -1,15 +1,12 @@
 package com.codegym.model;
 
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 public class User {
     @NotEmpty
     @Size(min = 2, max = 30)
     private String name;
 
-    @NotEmpty
     @Min(18)
     private int age;
 
